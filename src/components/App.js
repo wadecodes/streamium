@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import history from '../history';
 
 // Header COmponent
 import Header from './Header';
@@ -10,12 +11,12 @@ import StreamsRouter from './router/StreamsRouter';
 const App = () => {
   return (
     <div className="ui container">
-      <BrowserRouter>
+      <Router history={history}>
         <div>
           <Header />
           <StreamsRouter />
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
