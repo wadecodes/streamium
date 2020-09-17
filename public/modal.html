@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modal</title>
+    <style>
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 30%;
+        background-color: orangered;
+      }
+      .content {
+        margin-left: 30%;
+        height: 200vh;
+      }
+      .modal {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: grid;
+        place-items: center;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .modal-body {
+        background-color: #fff;
+        height: 30%;
+        width: 30%;
+        display: grid;
+        place-items: center;
+        
+      }
+      /* .positioned {
+        position: relative;
+        z-index: -1;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="positioned">
+      <div class="modal">
+        <div class="modal-body">
+          <h1>I am a modal</h1>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">I am a sidebar</div>
+    <div class="content">I am a content</div>
+  </body>
+</html>

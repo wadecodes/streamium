@@ -12,7 +12,7 @@ export class StreamCreate extends Component {
   render() {
     return (
       <div>
-        <StreamForm onSubmit={this.onSubmit} />;
+        <StreamForm onSubmit={this.onSubmit} />
       </div>
     );
   }
